@@ -26,11 +26,16 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-const Index = ({ logo, header, sectionAboutProject }: LandingPageProps) => (
+const Index = ({
+  logo,
+  header,
+  sectionAboutProject,
+  sectionTech
+}: LandingPageProps) => (
   <>
     <SectionHero logo={logo} header={header} />
     <SectionAboutProject sectionAboutProject={sectionAboutProject} />
-    <SectionTech />
+    <SectionTech sectionTech={sectionTech} />
     <SectionConcepts />
     <SectionModules />
     <SectionAgenda />
