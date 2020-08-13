@@ -14,18 +14,11 @@ const SectionAboutProject = ({ sectionAboutProject }: Props) => (
   <S.Wrapper>
     <Container>
       <S.Container>
-        <S.Image>
-          <source
-            srcSet={require('@images/project.png?webp')}
-            type="image/webp"
-          />
-          <source srcSet={require('@images/project.png')} type="image/png" />
-          <img
-            src={getImageUrl(sectionAboutProject.image.url)}
-            loading="lazy"
-            alt={sectionAboutProject.image.alternativeText}
-          />
-        </S.Image>
+        <S.Image
+          src={getImageUrl(sectionAboutProject.image.url)}
+          loading="lazy"
+          alt={sectionAboutProject.image.alternativeText}
+        />
         <div>
           <Heading>{sectionAboutProject.title}</Heading>
           <S.Text

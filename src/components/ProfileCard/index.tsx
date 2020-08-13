@@ -29,9 +29,7 @@ const ProfileCard: React.FC<Props> = ({
   description
 }) => (
   <S.Card key={name}>
-    <S.Image>
-      <img src={getImageUrl(photo.url)} loading="lazy" alt={name} />
-    </S.Image>
+    <S.Image src={getImageUrl(photo.url)} loading="lazy" alt={name} />
     <S.Name>{name}</S.Name>
     <S.Role>{role}</S.Role>
     <S.SocialLinks>
